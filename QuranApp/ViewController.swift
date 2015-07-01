@@ -19,50 +19,40 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var Label1: UILabel!
     @IBOutlet weak var TitleLabel: UILabel!
     var counter = 0
+    var counter3 = 1
     @IBAction func Button1(sender: AnyObject) {
-        counter = counter+1
-        var text1 = "\(counter)"
-        TitleLabel.text  = text1
+    counter = counter+1
+    TitleLabel.text  = "\(counter)"
+        if counter3==5{
+            counter3=1
+        }
+        if counter3==1 {
+            Label1.text = " سبحان الله"
+        }
+        if counter3==2{
+            Label1.text = "الحمدالله"
+            
+        }
+        if counter3==3{
+            Label1.text = "لا اله الا الله"
+        }
+        if counter3==4{
+            Label1.text = " الله اكبر"
         
         
-    }
+           }
+        
+        if counter == 33 {
+            counter=0
+            counter3 = counter3+1
+        }
+        
+    
+    
 
-    @IBOutlet weak var Label19: UILabel!
-    @IBOutlet weak var Label1: UILabel!
-    @IBOutlet weak var Label17: UILabel!
-    @IBOutlet weak var Label18: UILabel!
-    @IBOutlet weak var Label21: UILabel!
-    @IBOutlet weak var Label22: UILabel!
-    @IBOutlet weak var Label23: UILabel!
-    @IBOutlet weak var Label24: UILabel!
-    @IBOutlet weak var Label25: UILabel!
-    @IBOutlet weak var Label26: UILabel!
-    @IBOutlet weak var Label27: UILabel!
-    @IBOutlet weak var Label28: UILabel!
-    @IBOutlet weak var Label29: UILabel!
-    @IBOutlet weak var Label30: UILabel!
-    @IBOutlet weak var Label31: UILabel!
-    
-    @IBOutlet weak var Label32: UILabel!
-    @IBOutlet weak var Label33: UILabel!
-    
-    @IBOutlet weak var Label9: UILabel!
-    @IBOutlet weak var Label2: UILabel!
-    @IBOutlet weak var Label3: UILabel!
-    @IBOutlet weak var Label4: UILabel!
-    @IBOutlet weak var Label5: UILabel!
-    @IBOutlet weak var Label6: UILabel!
-    @IBOutlet weak var Label7: UILabel!
-    @IBOutlet weak var label8: UILabel!
-    @IBOutlet weak var Label10: UILabel!
-    @IBOutlet weak var Label11: UILabel!
-    @IBOutlet weak var Label12: UILabel!
-    @IBOutlet weak var Label13: UILabel!
-    @IBOutlet weak var Label14: UILabel!
-    @IBOutlet weak var Label15: UILabel!
-    @IBOutlet weak var Label16: UILabel!
     
 }
-
+}
