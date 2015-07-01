@@ -1,3 +1,11 @@
+//
+//  ViewController.swift
+//  QuranApp
+//
+//  Created by ali belqazi on 6/28/15.
+//  Copyright (c) 2015 ali belqazi. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -53,11 +61,3 @@ class ViewController: UIViewController {
     
 }
 
-
-        
-    
-    
-
-    
-}
-}
