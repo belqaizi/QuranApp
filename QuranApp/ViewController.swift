@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         
         
-        labelcounter = labelcounter+1
+        labelcounter++
         TitleLabel.text  = "\(labelcounter)"
         
         
@@ -43,21 +43,19 @@ class ViewController: UIViewController {
         case 4:
             Label1.text = " الله اكبر"
         case 5:
-            counter == 1
-           
+            counter = 1
+            
         default:
             Label1.text = " سبحان الله"
         }
         
         
-        
         if labelcounter == 33 {
             labelcounter=0
-            counter += counter
+            counter++
         }
         
     }
     
     
 }
-
