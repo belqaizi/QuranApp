@@ -16,8 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-f5-I82">
-                                <rect key="frame" x="246" y="494" width="91" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-f5-I82">
+                                <rect key="frame" x="255" y="440" width="91" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="y0q-Rp-H1v"/>
+                                    <constraint firstAttribute="height" constant="43" id="yko-ND-0b1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="سبح">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,25 +32,37 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-lV-8Bl">
                                 <rect key="frame" x="239" y="165" width="122" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="izE-jM-R73"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="سبحان الله" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhw-ze-BRP">
                                 <rect key="frame" x="149" y="91" width="302" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="KbZ-e4-pLL"/>
+                                    <constraint firstAttribute="width" constant="302" id="lJH-01-WXF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-5s-ltD">
+                                <rect key="frame" x="60" y="36" width="480" height="32"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="ZhK-lV-8Bl" secondAttribute="centerY" constant="104.5" id="61i-US-WlD"/>
-                            <constraint firstAttribute="centerY" secondItem="gYG-f5-I82" secondAttribute="centerY" constant="-215.5" id="7AA-rF-pp4"/>
-                            <constraint firstAttribute="centerX" secondItem="ZhK-lV-8Bl" secondAttribute="centerX" id="Vme-x3-rlI"/>
-                            <constraint firstAttribute="centerY" secondItem="bhw-ze-BRP" secondAttribute="centerY" constant="181" id="iBk-Ku-XvS"/>
-                            <constraint firstAttribute="centerX" secondItem="bhw-ze-BRP" secondAttribute="centerX" id="u0f-fI-Dvw"/>
-                            <constraint firstAttribute="centerX" secondItem="gYG-f5-I82" secondAttribute="centerX" constant="8.5" id="vaL-sA-E2F"/>
+                            <constraint firstItem="IN0-5s-ltD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="2mK-Qo-c4B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gYG-f5-I82" secondAttribute="bottom" constant="117" id="Ena-Xd-4AI"/>
+                            <constraint firstItem="IN0-5s-ltD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LHq-5C-iAV"/>
+                            <constraint firstItem="IN0-5s-ltD" firstAttribute="centerX" secondItem="bhw-ze-BRP" secondAttribute="centerX" id="Q4H-Vh-GYC"/>
+                            <constraint firstItem="ZhK-lV-8Bl" firstAttribute="top" secondItem="bhw-ze-BRP" secondAttribute="bottom" constant="18" id="iZF-Gq-Uwf"/>
+                            <constraint firstItem="gYG-f5-I82" firstAttribute="centerX" secondItem="ZhK-lV-8Bl" secondAttribute="centerX" id="kaE-Fh-Nom"/>
+                            <constraint firstItem="bhw-ze-BRP" firstAttribute="centerX" secondItem="ZhK-lV-8Bl" secondAttribute="centerX" id="kvN-KR-S8U"/>
+                            <constraint firstItem="bhw-ze-BRP" firstAttribute="top" secondItem="IN0-5s-ltD" secondAttribute="bottom" constant="23" id="oka-M5-Kpe"/>
                         </constraints>
                     </view>
                     <connections>

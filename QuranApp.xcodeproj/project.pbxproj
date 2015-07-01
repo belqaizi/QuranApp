@@ -14,6 +14,7 @@
 		B3AF4D3F1B404872005A2165 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AF4D3E1B404872005A2165 /* Images.xcassets */; };
 		B3AF4D421B404872005A2165 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AF4D401B404872005A2165 /* LaunchScreen.xib */; };
 		B3AF4D4E1B404872005A2165 /* QuranAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF4D4D1B404872005A2165 /* QuranAppTests.swift */; };
+		B3D423F31B43770400CAEA69 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D423F21B43770400CAEA69 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B3AF4D471B404872005A2165 /* QuranAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuranAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AF4D4C1B404872005A2165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3AF4D4D1B404872005A2165 /* QuranAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranAppTests.swift; sourceTree = "<group>"; };
+		B3D423F21B43770400CAEA69 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D423F31B43770400CAEA69 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		B3AF4D261B404872005A2165 = {
 			isa = PBXGroup;
 			children = (
+				B3D423F21B43770400CAEA69 /* iAd.framework */,
 				B3AF4D311B404872005A2165 /* QuranApp */,
 				B3AF4D4A1B404872005A2165 /* QuranAppTests */,
 				B3AF4D301B404872005A2165 /* Products */,
@@ -415,6 +419,7 @@
 				B3AF4D531B404872005A2165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3AF4D541B404872005A2165 /* Build configuration list for PBXNativeTarget "QuranAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				B3AF4D561B404872005A2165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
